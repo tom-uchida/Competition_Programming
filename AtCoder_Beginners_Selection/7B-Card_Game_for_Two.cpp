@@ -15,7 +15,8 @@ int main(void) {
         cin >> a[i];
     }
 
-    sort(a.rbegin(), a.rend()); // 降順ソート
+    // sort(a.rbegin(), a.rend()); // 降順ソート
+    reverse(a.begin(), a.end()); // 降順ソート
 
     int alice = 0, bob = 0;
     rep(i, N) {
