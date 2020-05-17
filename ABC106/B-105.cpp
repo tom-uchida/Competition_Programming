@@ -9,19 +9,19 @@ int main() {
     int N; cin >> N;
 
     int cnt;
-    int result = 0;
-    for (int i = 1; i <= N; i++) {
+    int answer = 0;
+    for (int i = 1; i <= N; i+=2) {
         cnt = 0;
         for (int j = 1; j <= i; j++) {
-            if (N%j == 0) {
+            if (i%j == 0) {
                 cnt++;
             }
         }
 
-        if (cnt == 8) result++;
+        if (cnt == 8) answer++;
     }
 
-    cout << result << endl;
+    cout << answer << "\n";
 
     return 0;
 }
